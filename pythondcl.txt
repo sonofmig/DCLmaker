@@ -1,0 +1,24 @@
+pronoun1 = "he"
+pronoun2 = "him"
+Date_of_entry = "18/2/23"
+Presenting_complaint = "SOB, cough and fever"
+initial_dx = "pneumonia"
+initial_treatment = "co-amoxiclav"
+further_treatment = "ciprofloxacin following a sputum sample indicating susceptibility"
+finished_treatment = "weaning oxygen and bloods improving suitably"
+exit_date = "25/2/23"
+additional_information = "A CT incidentally found a nodule in her right lung of 2mm, for which she has been referred to the relevant teams."
+
+template = f"""
+
+Dear Dr,
+
+Your patient was seen in A/E on {Date_of_entry} following {Presenting_complaint}. 
+On admission, {pronoun1} was managed as {initial_dx} and provided {initial_treatment}. Later, {pronoun1} was admitted to the ward where {pronoun1} received {further_treatment}. 
+Whilst on the wards, {pronoun1} recovered well and after {finished_treatment}, {pronoun1} was discharged on {exit_date}. {additional_information} 
+
+We wish {pronoun2} all the best
+Dr Zain Husain
+"""
+
+print(template)
